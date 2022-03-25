@@ -33,7 +33,13 @@ namespace tpmodul5_1302204078
                 Console.Write("{0,15:N0}", b.Next());
             Console.WriteLine();
 
+            for (int ctr = 1; ctr <= 50; ctr++)
+            {
+                Console.Write("{0,3}    ", b.Next(1000, 10000));
+                if (ctr % 10 == 0) Console.WriteLine();
+            }
 
+            this.id = b.Next(10000, 100000); //in range 10000-100000
             this.title = a;
             playCount = 0;
             setPlayCount(123);
